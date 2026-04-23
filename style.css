@@ -1,0 +1,150 @@
+/* style.css – Diseño limpio y responsive para IEP Escuela Hogar de Ventanilla */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    background-color: #f9fbfd;
+    color: #1e2f3d;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    background: linear-gradient(145deg, #0b3b3c, #1a5e5f);
+    color: white;
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+header p {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+nav {
+    background-color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 40px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border: 1px solid #d9e2e8;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 0.5rem 1.2rem;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0b3b3c;
+    padding: 0.4rem 0.8rem;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    background-color: #0b3b3c;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 1.8rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+    border: 1px solid #e2ecf0;
+}
+
+h2 {
+    color: #0b3b3c;
+    border-left: 6px solid #4fa3a5;
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: #1a5e5f;
+    margin: 1.5rem 0 0.8rem;
+}
+
+ul, ol {
+    padding-left: 1.8rem;
+    margin: 0.8rem 0;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    color: #5b7a8a;
+    border-top: 1px dashed #bcd0d9;
+    font-size: 0.9rem;
+}
+
+.badge {
+    background-color: #dff0f0;
+    color: #0b3b3c;
+    padding: 0.2rem 0.9rem;
+    border-radius: 30px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0b3b3c;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #1e6b6d;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    body { padding: 0.8rem; }
+    header h1 { font-size: 1.8rem; }
+    nav ul { flex-direction: column; align-items: center; }
+}
